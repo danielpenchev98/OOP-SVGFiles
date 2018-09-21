@@ -19,7 +19,8 @@ void Console::PrintMenu() const
 	std::cout << " <line> := create line <x1> <y1> <x2> <y2> <stroke color> <stroke width>\n";
 	std::cout << " <circle> := create circle <x> <y> <radius> <stroke color> <stroke width> <fill>\n";
 	std::cout << " <rectangle> := create rectangle <x> <y> <height> <width> <stroke color> <stroke width> <fill>";
-	std::cout << "<polygon> := create polygon <point1> <point2> ... <point3> <stroke color> <stroke width> <fill>";
+	std::cout << "<polygon> := create polygon <point1> <point2> ... <point> <stroke color> <stroke width> <fill>";
+	std::cout << "<polyline := create polyline <point1> <point2> ...<point> <stroke color> <stroke width>";
 	std::cout << "<ellipse> := create ellipse <x> <y> <rx> <ry> <stroke color> <stroke width> <fill>";
 	std::cout << "erase - use the following command to erase a figure :erase <id>\n";
 	std::cout << "translate - use the following command to translate a figure/all figures :translate vertical=10 horizontal=20/translate <id> vertical=10 horizontal=20\n";
