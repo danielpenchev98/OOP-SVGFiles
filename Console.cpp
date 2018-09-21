@@ -242,19 +242,19 @@ void Console::Open(const std::string& input,std::ifstream& file)
 		}
 		else if (type == "polyline")
 		{
-		unsigned int pointToErase = 0;
-		unsigned int i = 1;
-		pointToErase = extract.find("points=");
-		if (!CheckIfFound(pointToErase, file, extract)) continue;
-		extract.erase(pointToErase, 7);
-		pointToErase = extract.find("stroke=");
-		if (!CheckIfFound(pointToErase, file, extract))continue;
-		extract.erase(pointToErase, 7);
-		pointToErase = extract.find("stroke-width=");
-		if (!CheckIfFound(pointToErase, file, extract))continue;
-		extract.erase(pointToErase, 13);
-		extract = ReplaceSpecificSymbol(extract, ',', ' ');
-		AddFigure(extract);
+		    unsigned int pointToErase = 0;
+		    unsigned int i = 1;
+		    pointToErase = extract.find("points=");
+		    if (!CheckIfFound(pointToErase, file, extract)) continue;
+		    extract.erase(pointToErase, 7);
+		    pointToErase = extract.find("stroke=");
+		    if (!CheckIfFound(pointToErase, file, extract))continue;
+		    extract.erase(pointToErase, 7);
+		    pointToErase = extract.find("stroke-width=");
+		    if (!CheckIfFound(pointToErase, file, extract))continue;
+		    extract.erase(pointToErase, 13);
+		    extract = ReplaceSpecificSymbol(extract, ',', ' ');
+		    AddFigure(extract);
 		}
 		else
 		{
